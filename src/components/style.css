@@ -1,0 +1,212 @@
+* { /*reset ค่าทั้งหมดในเ Webpage*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.Room {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #dddfc1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.5rem;
+    width: 100%;
+}
+
+.Room .Details {
+    padding: 1rem;
+    background-color: #f4f4f3;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.Room .Details img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.text img {
+    width: 100%;
+    height: auto;
+}
+
+.Details .text {
+    font-size: large;
+}
+
+nav { /*ปรับในส่วนของ nav*/
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.menu li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #00a6ff;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.nav-con .button-btn {
+    background-color: #5695F4;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo-home img { /*ของ home*/
+    width: 70px;
+    height: 70px;
+}
+
+.logo img { /*ของ popup*/
+    width: 70px;
+    height: 70px;
+}
+
+.banner-slideshow {
+    background:url(../images/banner.jpg) no-repeat ; /*no repeat คือการไม่ให้ทำซ้ำ*/
+    width: 100%;
+    height: 650px;
+    background-size: cover; /*ทำให้ภาพพื้นหลังครอบคลุมในส่วนของ class ทั้งหมด*/
+    background-position: center center; /*การปรับภาพให้บน ล่าง ซ้าย ขวา อยู่ตรงกลาง*/
+    overflow: hidden;
+}
+
+.form-container {
+    width: 30%;
+}
+
+.Login {
+    background-image: url(../images/img01.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.form-container h3 {
+    color: #ffffff;
+}
+
+.form-container label {
+    color: #ffffff;
+}
+
+.form-container p {
+    color: #ffffff;
+}
+.Register {
+    background-image: url(../images/img01.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-container .Text-center {
+    text-align: center;
+}
+
+.btn {
+    color: #ffffff;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn:hover {
+    border: 2px solid #000000;
+    transition: 0.4ms;
+}
+
+.SearchRoom {
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.SearchRoom button {
+    margin: 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 8rem;
+    border: 2px solid #52a0f8;
+    background-color: #28067c;
+    color: #ffffff;
+    border-radius:5px; 
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.room-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding:20px ;
+}
+
+.room-text {
+    margin: 4rem;
+    text-align: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .form-container {
+        width: 45%;
+    }
+    .Room {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    .form-container {
+        width: 65%;
+    }
+    .Room .Details {
+        width: 100%;
+    }
+    .Room .Details img {
+        width: 100%;
+        height: auto;
+    }
+}
